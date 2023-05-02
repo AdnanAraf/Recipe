@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Rating from "react-rating";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaRegStar, FaStar } from "react-icons/fa";
 
 const ChefDetails = () => {
   const [identify, setidentify] = useState({});
@@ -18,7 +20,7 @@ const ChefDetails = () => {
       .then((data) => {
         // console.log(data);
         const founddata = data.find((job) => job.id == id);
-        console.log(founddata);
+        // console.log(founddata);
         setidentify(founddata);
       });
   }, []);
@@ -92,7 +94,14 @@ const ChefDetails = () => {
             </p>
             <p className="font-poppins font-bold">
               Rating:
-              <span className="font-medium"> {identify.rating1}</span>
+              <Rating
+                placeholderRating={identify.rating1}
+                emptySymbol={<FaRegStar />}
+                readonly
+                placeholderSymbol={<FaStar />}
+                fullSymbol={<FaStar />}
+              />
+              <span className="font-medium">{identify.rating1} </span>
             </p>
             <div>
               <button
@@ -122,6 +131,13 @@ const ChefDetails = () => {
 
             <p className="font-poppins font-bold">
               Rating:
+              <Rating
+                placeholderRating={identify.rating2}
+                emptySymbol={<FaRegStar />}
+                readonly
+                placeholderSymbol={<FaStar />}
+                fullSymbol={<FaStar />}
+              />
               <span className="font-medium"> {identify.rating2}</span>
             </p>
             <div>
@@ -151,6 +167,13 @@ const ChefDetails = () => {
 
             <p className="font-poppins font-bold">
               Rating:
+              <Rating
+                placeholderRating={identify.rating3}
+                emptySymbol={<FaRegStar />}
+                readonly
+                placeholderSymbol={<FaStar />}
+                fullSymbol={<FaStar />}
+              />
               <span className="font-medium"> {identify.rating3}</span>
             </p>
             <div>

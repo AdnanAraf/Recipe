@@ -1,0 +1,4 @@
+.rotated-image:hover {
+  transition: transform 1s ease-in-out;
+  transform: rotate(360deg);
+}
