@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SocialLoginBtn from "../SocialLoginBtn/SocialLoginBtn";
 
 const Login = () => {
   return (
@@ -42,9 +43,10 @@ const Login = () => {
         </form>
         <p className="text-center mt-[20px] ">
           <small>
-            New to Bookshop? <Link to="/register">Create New Account</Link>
+            New to SimplyRecipes? <Link to="/register">Create New Account</Link>
           </small>
         </p>
+        <SocialLoginBtn />
       </div>
       <div className="col-md-6">
         <img
