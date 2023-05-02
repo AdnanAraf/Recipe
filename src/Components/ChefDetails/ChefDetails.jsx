@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ChefDetails = () => {
   const [identify, setidentify] = useState({});
   const { id } = useParams();
+  const [isButtonDisabled1, setIsButtonDisabled1] = useState(false);
+  const [isButtonDisabled2, setIsButtonDisabled2] = useState(false);
+  const [isButtonDisabled3, setIsButtonDisabled3] = useState(false);
+
+  // Show an error toast
 
   useEffect(() => {
     fetch("http://localhost:5000/categories")
@@ -11,10 +18,23 @@ const ChefDetails = () => {
       .then((data) => {
         // console.log(data);
         const founddata = data.find((job) => job.id == id);
-        console.log(founddata);
+        // console.log(founddata);
         setidentify(founddata);
       });
   }, []);
+
+  const handleClick1 = () => {
+    setIsButtonDisabled1(true);
+    toast.success("This is my favourite food!");
+  };
+  const handleClick2 = () => {
+    setIsButtonDisabled2(true);
+    toast.success("This is my favourite food!");
+  };
+  const handleClick3 = () => {
+    setIsButtonDisabled3(true);
+    toast.success("This is my favourite food!");
+  };
 
   return (
     <div>
@@ -74,6 +94,16 @@ const ChefDetails = () => {
               Rating:
               <span className="font-medium"> {identify.rating1}</span>
             </p>
+            <div>
+              <button
+                onClick={handleClick1}
+                disabled={isButtonDisabled1}
+                className="btn btn-accent mt-[10px]"
+              >
+                Favourite
+              </button>
+              <ToastContainer></ToastContainer>
+            </div>
           </div>
           {/**************************** Recipe No-2********************************** */}
           <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg">
@@ -94,6 +124,15 @@ const ChefDetails = () => {
               Rating:
               <span className="font-medium"> {identify.rating2}</span>
             </p>
+            <div>
+              <button
+                onClick={handleClick2}
+                disabled={isButtonDisabled2}
+                className="btn btn-accent mt-[10px]"
+              >
+                Favourite
+              </button>
+            </div>
           </div>
           {/**************************** Recipe No-3********************************** */}
           <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg">
@@ -114,6 +153,15 @@ const ChefDetails = () => {
               Rating:
               <span className="font-medium"> {identify.rating3}</span>
             </p>
+            <div>
+              <button
+                onClick={handleClick3}
+                disabled={isButtonDisabled3}
+                className="btn btn-accent"
+              >
+                Favourite
+              </button>
+            </div>
           </div>
         </div>
       </div>
