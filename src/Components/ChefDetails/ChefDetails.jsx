@@ -18,7 +18,7 @@ const ChefDetails = () => {
       .then((data) => {
         // console.log(data);
         const founddata = data.find((job) => job.id == id);
-        // console.log(founddata);
+        console.log(founddata);
         setidentify(founddata);
       });
   }, []);
