@@ -4,7 +4,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 const ChefDetails = () => {
   const [identify, setidentify] = useState({});
   const { id } = useParams();
-  //   console.log("Adnan Araf", id);
+
   useEffect(() => {
     fetch("http://localhost:5000/categories")
       .then((res) => res.json())
