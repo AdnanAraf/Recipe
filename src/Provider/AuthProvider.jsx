@@ -27,12 +27,12 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const userUpdate = () => {
-    return updateProfile(auth.currentUser, {
-      displayName: "Jane Q. User",
-      photoURL: "https://example.com/jane-q-user/profile.jpg",
-    });
-  };
+  // const userUpdate = () => {
+  //   return updateProfile(auth.currentUser, {
+  //     displayName: "Jane Q. User",
+  //     photoURL: "https://example.com/jane-q-user/profile.jpg",
+  //   });
+  // };
 
   const logOut = () => {
     return signOut(auth);
@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  const authInfo = { registerUser, user, logOut, loginUser, userUpdate };
+  const authInfo = { registerUser, user, logOut, loginUser };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
