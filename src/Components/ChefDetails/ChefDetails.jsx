@@ -73,7 +73,7 @@ const ChefDetails = () => {
         </div>
         {/**************************** Recipe No-1********************************** */}
         <div className="">
-          <div className="border-2 h-[400px] w-[1300px] m-[20px] p-[30px] rounded-lg">
+          <div className="border-2 h-[450px] w-[1300px] m-[20px] p-[30px] rounded-lg relative">
             <h1 className="text-[25px] font-semibold">
               Recipe Name:
               <span className="text-[20px] font-crimpson font-semibold">
@@ -107,7 +107,7 @@ const ChefDetails = () => {
               <button
                 onClick={handleClick1}
                 disabled={isButtonDisabled1}
-                className="btn btn-accent mt-[10px]"
+                className="btn btn-accent mt-[10px] absolute bottom-[20px]"
               >
                 Favourite
               </button>
@@ -115,7 +115,7 @@ const ChefDetails = () => {
             </div>
           </div>
           {/**************************** Recipe No-2********************************** */}
-          <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg">
+          <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg relative">
             <h1 className="text-[25px] font-semibold">
               Recipe Name:
               <span className="text-[20px] font-crimpson font-semibold">
@@ -144,14 +144,14 @@ const ChefDetails = () => {
               <button
                 onClick={handleClick2}
                 disabled={isButtonDisabled2}
-                className="btn btn-accent mt-[10px]"
+                className="btn btn-accent mt-[10px] absolute bottom-[20px]"
               >
                 Favourite
               </button>
             </div>
           </div>
           {/**************************** Recipe No-3********************************** */}
-          <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg">
+          <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg relative">
             <h1 className="text-[25px] font-semibold">
               Recipe Name:
               <span className="text-[20px] font-crimpson font-semibold">
@@ -180,7 +180,7 @@ const ChefDetails = () => {
               <button
                 onClick={handleClick3}
                 disabled={isButtonDisabled3}
-                className="btn btn-accent"
+                className="btn btn-accent absolute bottom-[20px]"
               >
                 Favourite
               </button>
