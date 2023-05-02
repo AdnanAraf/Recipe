@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import SocialLoginBtn from "../SocialLoginBtn/SocialLoginBtn";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
+  const { loginUser } = useContext(AuthContext);
+  // const location = useLocation();
+  // const history = useHistory();
+  // let navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+
+    loginUser(email, password)
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        // navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="flex">
       <div className="form-container border-2 w-[400px] h-[400px] m-auto my-[100px]">
         <h2 className="text-center text-3xl font-bold my-10">Login</h2>
-        <form className="text-center">
+        <form onSubmit={handleLogin} className="text-center">
           <div className="mx-[50px] m-[20px]">
             <label className="block" htmlFor="email">
               Email
@@ -34,11 +61,7 @@ const Login = () => {
             />
           </div>
           <div>
-            <input
-              className="bg-blue-300 h-[40px] w-[100px] rounded-lg mx-[100px] mt-[20px]"
-              type="submit"
-              value="Login"
-            />
+            <button className="btn btn-info w-[300px] p-2 mt-3">Login</button>
           </div>
         </form>
         <p className="text-center mt-[20px] ">
