@@ -4,6 +4,7 @@ import Categories from "../Categories/Categories";
 import Section1 from "../ExtraSection/Section1";
 import Section2 from "../ExtraSection/Section2";
 import Footer from "../Footer/Footer";
+import PdfDownload from "../PdfDownload/PdfDownload";
 
 const Home1 = () => {
   return (
@@ -12,6 +13,7 @@ const Home1 = () => {
       <Categories />
       <Section1 />
       <Section2 />
+      <PdfDownload />
     </div>
   );
 };

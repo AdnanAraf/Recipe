@@ -35,7 +35,7 @@ const ShowCategories = ({ item }) => {
           </h1>
           <p>Experience:{years_of_experience}</p>
           <p>Number of Recipe:{Numbers_of_recipes}</p>
-
+          <p>Like:{likes}</p>
           <Link to={`/item/${id}`}>
             <button className="btn btn-success mt-[10px]">View Recipes</button>
           </Link>

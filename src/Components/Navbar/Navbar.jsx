@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { AuthContext } from "../../Provider/AuthProvider";
+import ActiveLink from "../Active/ActiveLink";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -29,12 +30,14 @@ const Navbar = () => {
         </div>
 
         <div className="lg:flex flex justify-between  my-[40px] lg:gap-[70px] cursor-pointer text-[18px] font-semibold lg:my-[10px]">
-          <Link classname="" to="/Home">
+          <ActiveLink classname="" to="/Home">
             Home
-          </Link>
-          <Link classname="" to="/Blog">
+          </ActiveLink>
+          <ActiveLink classname="" to="/Blog">
+            {" "}
             Blog
-          </Link>
+          </ActiveLink>
+
           {/* <Link to="/login">
             <button className="btn btn-primary mt-[-10px]">Login</button>
           </Link> */}
