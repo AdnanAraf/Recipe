@@ -8,6 +8,7 @@ import Login from "../Components/Login/Login";
 import Registration from "../Components/Registration/Registration";
 import Blog from "../Components/Blog/Blog";
 import PrivateRoute from "../Components/Private/PrivateRoute";
+import Home from "../Components/Home/Home";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home1 />,
+      },
+      {
+        path: "Home",
+        element: <Home />,
       },
       {
         path: "/item/:id",
