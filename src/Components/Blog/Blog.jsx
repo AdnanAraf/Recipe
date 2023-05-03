@@ -1,10 +1,8 @@
 import React from "react";
-
 const Blog = () => {
-  const ref = React.createRef();
   return (
     <div>
-      <div ref={ref}>
+      <div>
         <h1 className="text-[40px] font-poppins font-bold text-center">
           Welcome To Blog Page
         </h1>
@@ -81,18 +79,9 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="text-center">
-        {/* <Pdf targetRef={ref} filename="code-example.pdf">
-          {({ toPdf }) => (
-            <button onclick="toPdf" className="btn btn-primary w-[300px]">
-              Download
-            </button>
-          )}
-        </Pdf> */}
-        <ReactToPdf targetRef={ref} filename="div-blue.pdf">
-          {({ toPdf }) => <button onClick={toPdf}>Generate pdf</button>}
-        </ReactToPdf>
-      </div>
+      <button className="btn btn-primary w-[300px]">Download</button>
+
+      <div className="text-center"></div>
     </div>
   );
 };

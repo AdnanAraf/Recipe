@@ -7,6 +7,7 @@ import ChefDetails from "../Components/ChefDetails/ChefDetails";
 import Login from "../Components/Login/Login";
 import Registration from "../Components/Registration/Registration";
 import Blog from "../Components/Blog/Blog";
+import PrivateRoute from "../Components/Private/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/item/:id",
-        element: <ChefDetails />,
+        element: (
+          <PrivateRoute>
+            <ChefDetails />
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`/http://localhost:5000/categories/${params.id}`),
       },
