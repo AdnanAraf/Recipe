@@ -9,7 +9,7 @@ const Login = () => {
   // const location = useLocation();
   // const history = useHistory();
   // let navigate = useNavigate();
-  <RotatingTriangles colors={["#8C5E58", "#2B061E", "#361134"]} />;
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();

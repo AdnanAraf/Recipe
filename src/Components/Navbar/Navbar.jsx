@@ -1,11 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user?.email);
+  const [hover, setHover] = useState(false);
+  const Enter = () => {
+    setHover(true);
+  };
+  const Leave = () => {
+    setHover(false);
+  };
+
+  console.log(user?.name);
   const handleLogOut = () => {
     logOut()
       .then()
@@ -30,7 +38,21 @@ const Navbar = () => {
           {/* <Link to="/login">
             <button className="btn btn-primary mt-[-10px]">Login</button>
           </Link> */}
-          {user && <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>}
+
+          {user && (
+            <div
+              className="user-hover"
+              onMouseEnter={Enter}
+              onMouseLeave={Leave}
+            >
+              {hover ? (
+                user.email
+              ) : (
+                <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
+              )}
+            </div>
+          )}
+
           {user ? (
             <button
               onClick={handleLogOut}
