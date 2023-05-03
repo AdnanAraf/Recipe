@@ -41,11 +41,11 @@ const ChefDetails = () => {
 
   return (
     <div>
-      <div className="flex border-2 h-[600px] w-[1200px] m-auto my-[20px] p-[10px] ">
+      <div className="lg:flex border-2 lg:h-[600px] h-[1000px] lg:w-[1200px] m-auto my-[20px] p-[10px] ">
         <div>
           <LazyLoad>
             <img
-              className="h-[420px] w-[400px] m-[50px]"
+              className="lg:h-[420px] lg:w-[400px] w-[200px] h-[200px] m-[50px]"
               src={identify.chef_picture}
             ></img>
           </LazyLoad>
@@ -56,7 +56,7 @@ const ChefDetails = () => {
             <span className="font-poppins  text-[25px]">Name: </span>
             {identify.chef_Name}
           </h1>
-          <p className="w-[600px] font-bold">
+          <p className="lg:w-[600px] font-bold">
             Description:
             <span className="font-title font-semibold">
               {identify.description}
@@ -76,7 +76,7 @@ const ChefDetails = () => {
         </div>
         {/**************************** Recipe No-1********************************** */}
         <div className="">
-          <div className="border-2 h-[450px] w-[1300px] m-[20px] p-[30px] rounded-lg relative">
+          <div className="border-2 lg:h-[450px] h-[1200px] lg:w-[1300px] m-[20px] p-[30px] rounded-lg relative">
             <h1 className="text-[25px] font-semibold">
               Recipe Name:
               <span className="text-[20px] font-crimpson font-semibold">
@@ -118,7 +118,7 @@ const ChefDetails = () => {
             </div>
           </div>
           {/**************************** Recipe No-2********************************** */}
-          <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg relative">
+          <div className="border-2 lg:h-[400px] lg:w-[800px] h-[1000px]  m-[20px] p-[30px] rounded-lg relative">
             <h1 className="text-[25px] font-semibold">
               Recipe Name:
               <span className="text-[20px] font-crimpson font-semibold">
@@ -154,7 +154,7 @@ const ChefDetails = () => {
             </div>
           </div>
           {/**************************** Recipe No-3********************************** */}
-          <div className="border-2 h-[400px] w-[800px]  m-[20px] p-[30px] rounded-lg relative">
+          <div className="border-2 lg:h-[400px] lg:w-[800px] h-[1000px]  m-[20px] p-[30px] rounded-lg relative">
             <h1 className="text-[25px] font-semibold">
               Recipe Name:
               <span className="text-[20px] font-crimpson font-semibold">

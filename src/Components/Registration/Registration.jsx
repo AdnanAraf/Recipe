@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Registration = () => {
@@ -13,7 +13,9 @@ const Registration = () => {
   const handlePhotoUrlChange = (event) => {
     setPhoto(event.target.value);
   };
-
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   const handleRegister = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -36,6 +38,7 @@ const Registration = () => {
       registerUser(email, password)
         .then((result) => {
           console.log(result.user);
+          navigate(from, { replace: true });
         })
         .catch((err) => {
           console.log(err.message);
@@ -43,8 +46,8 @@ const Registration = () => {
     }
   };
   return (
-    <div className="flex ">
-      <div className="form-container border-2 w-[400px] h-[600px] m-auto my-[50px] mx-[200px]">
+    <div className="lg:flex ">
+      <div className="form-container border-2 w-[400px] h-[600px] m-auto my-[50px] lg:mx-[200px]">
         <h2 className="text-center text-3xl font-bold my-10">Sign Up</h2>
         <form onSubmit={handleRegister} className="text-center">
           {/*********************************NAME********************************************** */}

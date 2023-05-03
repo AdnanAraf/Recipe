@@ -6,7 +6,7 @@ const Blog = () => {
         <h1 className="text-[40px] font-poppins font-bold text-center">
           Welcome To Blog Page
         </h1>
-        <div className="border-2 h-[350px] w-[600px] p-[10px] m-auto my-[30px]">
+        <div className="border-2 h-[350px] lg:w-[600px] p-[10px] m-auto my-[30px]">
           <h1 className="font-bold font-poppins bg-slate-500">
             1.Tell us the differences between uncontrolled and controlled
             components
@@ -19,7 +19,7 @@ const Blog = () => {
             components that manage their own state internally.
           </p>
         </div>
-        <div className="border-2 h-[350px] w-[600px] p-[10px] m-auto my-[30px]">
+        <div className="border-2 h-[350px] lg:w-[600px] p-[10px] m-auto my-[30px]">
           <h1 className="font-bold font-poppins bg-slate-500">
             2.How to validate React props using PropTypes
           </h1>
@@ -31,7 +31,7 @@ const Blog = () => {
             object within your component.
           </p>
         </div>
-        <div className="border-2 h-[600px] w-[600px] p-[10px] m-auto my-[30px]">
+        <div className="border-2 lg:h-[600px] h-[1000px] lg:w-[600px] p-[10px] m-auto my-[30px]">
           <h1 className="font-bold font-poppins bg-slate-500">
             3.Tell us the difference between nodejs and express js.
           </h1>
@@ -65,7 +65,7 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="border-2 h-[350px] w-[600px] p-[10px] m-auto my-[30px]">
+        <div className="border-2 h-[350px] lg:w-[600px] p-[10px] m-auto my-[30px]">
           <h1 className="font-bold font-poppins bg-slate-500">
             4.What is a custom hook, and why will you create a custom hook?
           </h1>
