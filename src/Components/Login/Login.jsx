@@ -2,13 +2,14 @@ import React, { useContext, useState } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import SocialLoginBtn from "../SocialLoginBtn/SocialLoginBtn";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { RotatingTriangles } from "react-loader-spinner";
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext);
   // const location = useLocation();
   // const history = useHistory();
   // let navigate = useNavigate();
-
+  <RotatingTriangles colors={["#8C5E58", "#2B061E", "#361134"]} />;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();

@@ -10,6 +10,7 @@ import Blog from "../Components/Blog/Blog";
 import PrivateRoute from "../Components/Private/PrivateRoute";
 import Home from "../Components/Home/Home";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import LoadingSpinner from "../Components/Loading/LoadingSpinner";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+      },
+      {
+        path: "loader",
+        element: <LoadingSpinner />,
       },
     ],
   },

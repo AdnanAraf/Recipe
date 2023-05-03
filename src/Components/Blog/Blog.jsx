@@ -1,5 +1,7 @@
 import React from "react";
+import { RotatingTriangles } from "react-loader-spinner";
 const Blog = () => {
+  <RotatingTriangles colors={["#8C5E58", "#2B061E", "#361134"]} />;
   return (
     <div>
       <div>
