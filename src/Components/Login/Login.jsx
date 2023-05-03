@@ -13,7 +13,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
+  const [error, seterror] = useState("");
+  // console.log(location);
 
   const from = location.state?.from?.pathname || "/";
 
@@ -30,11 +31,12 @@ const Login = () => {
         const loggedUser = result.user;
         form.reset;
         navigate(from, { replace: true });
-        console.log(loggedUser);
+        // console.log(loggedUser);
         // navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error);
+        seterror("Password or Email Didnot Match");
       });
   };
   return (
@@ -76,6 +78,7 @@ const Login = () => {
             New to SimplyRecipes? <Link to="/register">Create New Account</Link>
           </small>
         </p>
+        <p className=" text-red-400 font-bold text-center">{error}</p>
         <SocialLoginBtn />
       </div>
       <div className="col-md-6">

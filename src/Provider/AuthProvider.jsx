@@ -6,7 +6,6 @@ import {
   onAuthStateChanged,
   signOut,
   signInWithEmailAndPassword,
-  updateProfile,
 } from "firebase/auth";
 // import app from "./../firebase/firebase.config";
 import { useState } from "react";

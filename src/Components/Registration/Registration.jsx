@@ -21,6 +21,7 @@ const Registration = () => {
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
+
     if (
       !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
         password
