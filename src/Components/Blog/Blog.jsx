@@ -82,7 +82,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        {/* <button className="btn btn-primary w-[300px] m-auto">Download</button> */}
+        <button className="btn btn-primary w-[300px] m-auto">Download</button>
         <div className="text-center"></div>
             
       </div>
