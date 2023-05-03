@@ -4,6 +4,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaRegStar, FaStar } from "react-icons/fa";
+import LazyLoad from "react-lazy-load";
 
 const ChefDetails = () => {
   const [identify, setidentify] = useState({});
@@ -42,10 +43,12 @@ const ChefDetails = () => {
     <div>
       <div className="flex border-2 h-[600px] w-[1200px] m-auto my-[20px] p-[10px] ">
         <div>
-          <img
-            className="h-[420px] w-[400px] m-[50px]"
-            src={identify.chef_picture}
-          ></img>
+          <LazyLoad>
+            <img
+              className="h-[420px] w-[400px] m-[50px]"
+              src={identify.chef_picture}
+            ></img>
+          </LazyLoad>
         </div>
 
         <div className="mt-[50px] ">

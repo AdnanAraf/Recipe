@@ -13,14 +13,14 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="flex justify-between bg-gray-50 p-[40px]">
+      <div className="lg:flex lg:justify-between  bg-gray-50 lg:p-[40px]">
         <div>
-          <h1 className="text-[50px] mx-[80px] font-title font-bold">
+          <h1 className="lg:text-[50px] text-[20px] lg:mx-[80px] lg:font-title font-bold">
             SimplyRecipes
           </h1>
         </div>
 
-        <div className="flex gap-[70px] cursor-pointer text-[18px] font-semibold my-[10px]">
+        <div className="lg:flex flex justify-between  my-[40px] lg:gap-[70px] cursor-pointer text-[18px] font-semibold lg:my-[10px]">
           <Link classname="" to="/Home">
             Home
           </Link>

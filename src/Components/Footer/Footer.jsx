@@ -3,15 +3,15 @@ import { FaFacebook, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-black h-[200px] w-full mt-[10px]">
+    <div className="bg-black lg:h-[200px] w-full mt-[10px] overflow-hidden">
       <div>
         <h1 className="text-center text-white text-[30px]">SimplyRecipes</h1>
       </div>
-      <div className="flex mx-[100px] justify-around">
+      <div className="lg:flex mx-[100px] justify-around">
         <div className="flex ">
-          <FaFacebook className="h-[50px] w-[50px] m-[20px]  text-blue-500 " />
-          <FaYoutube className="h-[50px] w-[50px] m-[20px] text-red-700" />
-          <FaWhatsapp className="h-[50px] w-[50px] m-[20px] text-green-700" />
+          <FaFacebook className="lg:h-[50px] lg:w-[50px] h-[100px] w-[100px] m-[20px]  text-blue-500 " />
+          <FaYoutube className=" lg:h-[50px] lg:w-[50px] h-[100px] w-[100px] m-[20px] text-red-700" />
+          <FaWhatsapp className="lg:h-[50px] lg:w-[50px] h-[100px] w-[100px] m-[20px] text-green-700" />
         </div>
         <div>
           <h1 className="text-white text-[25px] font-bold">Contact info</h1>

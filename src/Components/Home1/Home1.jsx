@@ -12,7 +12,6 @@ const Home1 = () => {
       <Categories />
       <Section1 />
       <Section2 />
-      <Footer />
     </div>
   );
 };

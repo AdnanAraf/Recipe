@@ -3,28 +3,31 @@ import "./Section1.css";
 
 const Section1 = () => {
   return (
-    <div className="bg-orange-50">
+    <div className="bg-orange-50 overflow-hidden">
       <div>
         <h1 className="text-center text-[50px] font-poppins font-bold  mt-[50px]">
           OFFER NOW
         </h1>
       </div>
       <div class="middle2">
-        <div className="flex justify-between ">
-          <div className=" my-[200px]">
+        <div className="lg:flex lg:justify-between ">
+          <div className=" lg:my-[200px] my-[100px]">
             <img
-              className="rotated-image mx-[100px] w-[200px] h-[200px] mt-[20px] absolute"
+              className="rotated-image lg:mx-[100px] w-[200px] h-[200px] mt-[20px] absolute"
               src="./public/sale-shape-red.png"
             ></img>
-            <img className="mx-[100px] " src="./public/about-banner.png"></img>
+            <img
+              className="lg:mx-[100px] "
+              src="./public/about-banner.png"
+            ></img>
           </div>
 
-          <div className=" my-[240px] mx-[200px]">
-            <h1 className="text-[40px] font-bold w-[450px]">
-              Foodie,Burgers,and Best Pizzas{" "}
+          <div className=" lg:my-[240px] my-[10px] lg:mx-[200px]">
+            <h1 className="lg:text-[40px] text-[30px] font-bold w-[450px]">
+              Foodie,Burgers,and Best Pizzas
               <span className="text-orange-600">in Town!</span>
             </h1>
-            <h4 className="w-[500px] font-semibold">
+            <h4 className="lg:w-[500px] font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam enim quasi debitis voluptate id, maiores sint fugiat
               officia asperiores laudantium. Temporibus deserunt a quasi nemo

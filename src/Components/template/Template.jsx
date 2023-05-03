@@ -6,14 +6,14 @@ import React from "react";
 const Template = () => {
   return (
     <div>
-      <div className="carousel w-full">
+      <div className="carousel w-full mt-[50px]">
         <div id="slide1" className="carousel-item relative w-full">
-          <div className="flex bg-yellow-50 justify-end">
-            <div className="mt-[250px] mx-[20px]">
-              <h1 className="font-poppins font-bold text-[40px]">
+          <div className="flex bg-yellow-50 lg:justify-end lg:h-full lg:w-full h-[400px] w-full ">
+            <div className="lg:mt-[250px] mx-[20px] mt-[100px]">
+              <h1 className="font-poppins font-bold lg:text-[40px]">
                 Super Delicious Noodles in Town!
               </h1>
-              <p className="font-title font-bold text-[25px] ">
+              <p className="font-title font-bold lg:text-[25px] ">
                 Food is Any substance Consumed To provide Nutritional Support
                 For Any Organism
               </p>
@@ -21,7 +21,7 @@ const Template = () => {
             <div>
               <img
                 src="./public/banner-1.jpg"
-                className="w-[800px] h-[600px] mx-[100px]"
+                className="lg:w-[800px] lg:h-[600px] lg:mx-[100px] h-[200px] w-[400px] lg:mt[0px] mt-[100px]"
               />
             </div>
           </div>
@@ -37,12 +37,12 @@ const Template = () => {
         </div>
         {/************************** SLIDER2************************************************************* */}
         <div id="slide2" className="carousel-item relative w-full">
-          <div className="flex bg-red-100 justify-end">
-            <div className="mt-[250px] mx-[20px]">
-              <h1 className="font-poppins font-bold text-[40px]">
+          <div className="flex bg-red-100 lg:justify-end lg:h-full lg:w-full h-[400px] w-full">
+            <div className="lg:mt-[250px] mx-[20px] mt-[100px]">
+              <h1 className="font-poppins font-bold lg:text-[40px]">
                 Super Delicious Pizza in Town!
               </h1>
-              <p className="font-title font-bold text-[25px] ">
+              <p className="font-title font-bold lg:text-[25px]  ">
                 Food is Any substance Consumed To provide Nutritional Support
                 For Any Organism
               </p>
@@ -50,7 +50,7 @@ const Template = () => {
             <div>
               <img
                 src="./public/banner-2.jpg"
-                className="w-[800px] h-[600px] mx-[100px]"
+                className="lg:w-[800px] lg:h-[600px] lg:mx-[100px] h-[200px] w-[400px] lg:mt[0px] mt-[100px]"
               />
             </div>
           </div>
@@ -63,14 +63,14 @@ const Template = () => {
             </a>
           </div>
         </div>
-        {/************************** SLIDER2************************************************************* */}
+        {/************************** SLIDER3************************************************************* */}
         <div id="slide3" className="carousel-item relative w-full">
-          <div className="flex bg-green-100 justify-end">
-            <div className="mt-[250px] mx-[20px]">
-              <h1 className="font-poppins font-bold text-[40px]">
+          <div className="flex bg-green-100 lg:justify-end lg:h-full lg:w-full h-full w-full">
+            <div className="lg:mt-[250px] mx-[20px] mt-[100px]">
+              <h1 className="font-poppins font-bold lg:text-[40px]">
                 Super Delicious Burger in Town!
               </h1>
-              <p className="font-title font-bold text-[25px] ">
+              <p className="font-title font-bold lg:text-[25px] ">
                 Food is Any substance Consumed To provide Nutritional Support
                 For Any Organism
               </p>
@@ -78,7 +78,7 @@ const Template = () => {
             <div>
               <img
                 src="./public/banner-3.jpg"
-                className="w-[800px] h-[600px] mx-[100px]"
+                className="lg:w-[800px] lg:h-[600px] lg:mx-[100px] h-[200px] w-[400px] lg:mt[0px] mt-[100px]"
               />
             </div>
           </div>
