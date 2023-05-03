@@ -1,8 +1,12 @@
 import React from "react";
+import LazyLoad from "react-lazy-load";
+import "./ShowCategories.css";
 
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ShowCategories = ({ item }) => {
+  console.log(item);
   const {
     id,
     chef_picture,
@@ -16,7 +20,9 @@ const ShowCategories = ({ item }) => {
     <div>
       <div className="flex m-[20px] justify-between border-2 h-[400px] w-[800px] p-[50px] mx-[420px]">
         <div>
-          <img className="h-[300px] w-[400px]" src={chef_picture}></img>
+          <LazyLoad>
+            <img className="h-[300px] w-[400px]" src={chef_picture} />
+          </LazyLoad>
         </div>
 
         <div className="mt-[50px] ">
