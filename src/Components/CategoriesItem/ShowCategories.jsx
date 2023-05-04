@@ -19,7 +19,7 @@ const ShowCategories = ({ item }) => {
 
   return (
     <div>
-      <div className="lg:flex m-[20px] lg:justify-between border-2 lg:h-[400px] h-[500px] lg:w-[800px] p-[50px] lg:mx-[420px]">
+      <div className="lg:flex m-[20px] lg:justify-between border-2 lg:h-[400px] h-[600px] lg:w-[800px] p-[50px] lg:mx-[420px]">
         <LazyLoad>
           <img className="h-[300px] w-[400px]" src={chef_picture}></img>
         </LazyLoad>
