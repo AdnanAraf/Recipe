@@ -31,7 +31,7 @@ const ChefDetails = () => {
   // Show an error toast
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://the-chef-server-adnanaraf.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);

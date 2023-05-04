@@ -24,7 +24,10 @@ const Section2 = () => {
             </p>
           </div>
           <div className="img1 ">
-            <img className="lg:mt-[50px] lg:mx-[60px]" src="promo-1.png"></img>
+            <img
+              className="lg:mt-[50px] lg:mx-[60px]"
+              src="https://i.ibb.co/d570KLh/promo-1.png"
+            ></img>
           </div>
         </div>
 
@@ -46,7 +49,10 @@ const Section2 = () => {
           </div>
 
           <div className="img1">
-            <img className="mt-[50px] mx-[60px]" src="promo-2.png"></img>
+            <img
+              className="mt-[50px] mx-[60px]"
+              src="https://i.ibb.co/Cz4Phfd/promo-2.png"
+            ></img>
           </div>
         </div>
 
@@ -67,7 +73,10 @@ const Section2 = () => {
             </p>
           </div>
           <div className="img1">
-            <img className="mt-[50px] mx-[60px]" src="promo-3.png"></img>
+            <img
+              className="mt-[50px] mx-[60px]"
+              src="https://i.ibb.co/rGmYf3q/promo-3.png"
+            ></img>
           </div>
         </div>
       </div>

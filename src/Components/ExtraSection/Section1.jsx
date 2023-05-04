@@ -14,11 +14,11 @@ const Section1 = () => {
           <div className=" lg:my-[200px] my-[100px]">
             <img
               className="rotated-image lg:mx-[100px] w-[200px] h-[200px] mt-[20px] absolute"
-              src="./public/sale-shape-red.png"
+              src="https://i.ibb.co/R7JQF3m/sale-shape-red.png"
             ></img>
             <img
               className="lg:mx-[100px] "
-              src="./public/about-banner.png"
+              src="https://i.ibb.co/3f6BM33/about-banner.png"
             ></img>
           </div>
 

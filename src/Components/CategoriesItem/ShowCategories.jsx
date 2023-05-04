@@ -4,6 +4,7 @@ import "./ShowCategories.css";
 
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ShowCategories = ({ item }) => {
   console.log(item);
@@ -19,14 +20,9 @@ const ShowCategories = ({ item }) => {
   return (
     <div>
       <div className="lg:flex m-[20px] lg:justify-between border-2 lg:h-[400px] h-[500px] lg:w-[800px] p-[50px] lg:mx-[420px]">
-        <div>
-          <LazyLoad>
-            <img
-              className="lg:h-[300px] lg:w-[400px] h-[200px] w-[200px]"
-              src={chef_picture}
-            />
-          </LazyLoad>
-        </div>
+        <LazyLoad>
+          <img className="h-[300px] w-[400px]" src={chef_picture}></img>
+        </LazyLoad>
 
         <div className="mt-[50px] ">
           <h1 className="text-[20px]">

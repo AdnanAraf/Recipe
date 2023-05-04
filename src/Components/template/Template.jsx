@@ -20,7 +20,7 @@ const Template = () => {
             </div>
             <div>
               <img
-                src="./public/banner-1.jpg"
+                src="https://i.ibb.co/HPxy4MG/banner-1.jpg"
                 className="lg:w-[800px] lg:h-[600px] lg:mx-[100px] h-[200px] w-[400px] lg:mt[0px] mt-[100px]"
               />
             </div>
@@ -49,7 +49,7 @@ const Template = () => {
             </div>
             <div>
               <img
-                src="./public/banner-2.jpg"
+                src="https://i.ibb.co/fSLbSLK/banner-2.jpg"
                 className="lg:w-[800px] lg:h-[600px] lg:mx-[100px] h-[200px] w-[400px] lg:mt[0px] mt-[100px]"
               />
             </div>
@@ -77,7 +77,7 @@ const Template = () => {
             </div>
             <div>
               <img
-                src="./public/banner-3.jpg"
+                src="https://i.ibb.co/WFpLPcC/banner-3.jpg"
                 className="lg:w-[800px] lg:h-[600px] lg:mx-[100px] h-[200px] w-[400px] lg:mt[0px] mt-[100px]"
               />
             </div>

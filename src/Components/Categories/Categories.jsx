@@ -5,7 +5,7 @@ const Categories = () => {
   const [categories, setcategories] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://the-chef-server-adnanaraf.vercel.app/categories")
       .then((response) => response.json())
       .then((data) => setcategories(data))
       .catch((error) => console.error(error));
